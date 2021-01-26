@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_partner_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="2dp"
+            android:contentDescription="@string/user_picture"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user" />
+
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_toStartOf="@id/text_view_id"
+            android:layout_toEndOf="@id/img_partner_id"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/partner_name"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/text_view_external_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:layout_margin="2dp"
+            android:layout_toStartOf="@id/text_view_id"
+            android:layout_toEndOf="@id/img_partner_id"
+            android:text="@string/email"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="2dp"
+            android:text="@string/default_tariff"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

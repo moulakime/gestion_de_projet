@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_invoice"
+            android:title="Ventes" />
+        <item
+            android:id="@+id/nav_credit_notes"
+            android:title="Avoirs" />
+        <item
+            android:id="@+id/nav_order"
+            android:title="Commandes" />
+        <item
+            android:id="@+id/nav_catalogue"
+            android:title="Catalogue" />
+        <item
+            android:id="@+id/nav_manage_clients"
+            android:title="Gestion Clientele" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Parametres" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Deconnecter" />
+        </menu>
+    </item>
+
+</menu>

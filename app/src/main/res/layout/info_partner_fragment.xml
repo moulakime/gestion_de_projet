@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress_circular_info_partner"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle"
+            android:indeterminate="true"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/info_partner_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+
+            <EditText
+                android:id="@+id/ed_nom_partner"
+                style="@style/ed_style"
+                android:autofillHints="@string/partner_name"
+                android:hint="@string/partner_name"
+                android:inputType="text"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/ed_tel_partner"
+                style="@style/ed_style"
+                android:layout_below="@id/ed_nom_partner"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/ed_email_partner"
+                style="@style/ed_style"
+                android:layout_below="@id/ed_tel_partner"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/ed_patent_partner"
+                style="@style/ed_style"
+                android:layout_below="@id/ed_email_partner"
+                android:hint="@string/patent"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/ed_ice_partner"
+                style="@style/ed_style"
+                android:layout_below="@id/ed_patent_partner"
+                android:hint="@string/ice"
+                android:inputType="number"
+                tools:targetApi="o" />
+
+            <ImageButton
+                android:id="@+id/btn_save_partner"
+                style="@style/btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_ice_partner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/ic_save"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</ScrollView>
+
+

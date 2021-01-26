@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_round"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnr_txt_invoice_dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_product_invoice_dialog_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textColor="@color/colorWhiter"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/txt_mt_invoice_dialog_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_price_unit"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnr_invoice_dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiter"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_quantity_invoice_dialog_line"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_round"
+            android:drawablePadding="10dp"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:textAlignment="center"
+            tools:targetApi="o" />
+
+
+        <LinearLayout
+            android:id="@+id/lnr_btn_invoice_dialog_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btn_cancel_invoice_dialog_line"
+                style="?android:attr/buttonBarNegativeButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_cancel_sale_dialog_gradient"
+                android:text="@string/annuler"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btn_validate_invoice_dialog_line"
+                style="?android:attr/buttonBarPositiveButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_validate_sale_dialog_gradient"
+                android:text="@string/valider"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/import_products"
+        android:icon="@drawable/ic_file"
+        android:title="@string/get_clients"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/cart"
+        app:actionLayout="@layout/action_bar_notification_icon"
+        app:showAsAction="always" />
+</menu>
